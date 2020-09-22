@@ -269,8 +269,6 @@ enum RPPopupMenuAnimation {
         case .moveUpWithFade:
             animation = AnimationFactory.makeMoveUpWithFade(rowHeight: cell.frame.height, duration: 0.8, delayFactor: 0.04)
             break
-        default:
-            break
         }
         if(animation != nil){
             let animator = Animator(animation: animation)
