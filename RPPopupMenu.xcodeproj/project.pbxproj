@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30850E97251A07E8006E65AE /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		30C339952519D6B6008E99C8 /* RPPopupMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C3398B2519D6B6008E99C8 /* RPPopupMenu.framework */; };
 		30C3399A2519D6B6008E99C8 /* RPPopupMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C339992519D6B6008E99C8 /* RPPopupMenuTests.swift */; };
 		30C3399C2519D6B6008E99C8 /* RPPopupMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C3398E2519D6B6008E99C8 /* RPPopupMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,7 +22,6 @@
 		30C339C42519DA31008E99C8 /* RPPopupMenuStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C339C32519DA31008E99C8 /* RPPopupMenuStyles.swift */; };
 		30C339C62519DA46008E99C8 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C339C52519DA46008E99C8 /* Animator.swift */; };
 		30C339C82519F2D2008E99C8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C339C72519F2D2008E99C8 /* SecondViewController.swift */; };
-		3BC6568EEE0FD9BB7F75DB32 /* Pods_RPPopupMenuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F10FD9C10DD5B5CEBEDB546 /* Pods_RPPopupMenuDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +34,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		30850E98251A07E8006E65AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30850E97251A07E8006E65AE /* BuildFile in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		252AB29E436B685BA950FEFD /* Pods-RPPopupMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPPopupMenuDemo.debug.xcconfig"; path = "Target Support Files/Pods-RPPopupMenuDemo/Pods-RPPopupMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		2D1F5D7177436C2BF2E55DFB /* Pods-RPPopupMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPPopupMenuDemo.release.xcconfig"; path = "Target Support Files/Pods-RPPopupMenuDemo/Pods-RPPopupMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
+		30850E99251A082E006E65AE /* RPPopupMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RPPopupMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C3398B2519D6B6008E99C8 /* RPPopupMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPPopupMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C3398E2519D6B6008E99C8 /* RPPopupMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPPopupMenu.h; sourceTree = "<group>"; };
 		30C3398F2519D6B6008E99C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +69,6 @@
 		30C339C32519DA31008E99C8 /* RPPopupMenuStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPPopupMenuStyles.swift; sourceTree = "<group>"; };
 		30C339C52519DA46008E99C8 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		30C339C72519F2D2008E99C8 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		6F10FD9C10DD5B5CEBEDB546 /* Pods_RPPopupMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPPopupMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BC6568EEE0FD9BB7F75DB32 /* Pods_RPPopupMenuDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +159,7 @@
 		30C339C92519F9DA008E99C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6F10FD9C10DD5B5CEBEDB546 /* Pods_RPPopupMenuDemo.framework */,
+				30850E99251A082E006E65AE /* RPPopupMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,8 +167,6 @@
 		8D3E31CED21726F131D5F4AB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				252AB29E436B685BA950FEFD /* Pods-RPPopupMenuDemo.debug.xcconfig */,
-				2D1F5D7177436C2BF2E55DFB /* Pods-RPPopupMenuDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -216,11 +225,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30C339BA2519D7AC008E99C8 /* Build configuration list for PBXNativeTarget "RPPopupMenuDemo" */;
 			buildPhases = (
-				C58EF11BBC9A6C81B33C215C /* [CP] Check Pods Manifest.lock */,
 				30C339A52519D7A5008E99C8 /* Sources */,
 				30C339A62519D7A5008E99C8 /* Frameworks */,
 				30C339A72519D7A5008E99C8 /* Resources */,
-				7E438EB5091C4A55688F49A3 /* [CP] Embed Pods Frameworks */,
+				30850E98251A07E8006E65AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,48 +307,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7E438EB5091C4A55688F49A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RPPopupMenuDemo/Pods-RPPopupMenuDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RPPopupMenuDemo/Pods-RPPopupMenuDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RPPopupMenuDemo/Pods-RPPopupMenuDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C58EF11BBC9A6C81B33C215C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RPPopupMenuDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30C339872519D6B6008E99C8 /* Sources */ = {
@@ -614,7 +580,6 @@
 		};
 		30C339BB2519D7AC008E99C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 252AB29E436B685BA950FEFD /* Pods-RPPopupMenuDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,7 +597,6 @@
 		};
 		30C339BC2519D7AC008E99C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D1F5D7177436C2BF2E55DFB /* Pods-RPPopupMenuDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
