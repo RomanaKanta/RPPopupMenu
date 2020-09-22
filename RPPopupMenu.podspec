@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/Romana-Parvin/RPPopupMenu"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   spec.author             = { "Romana" => "romanap.dev@gmail.com" }
  
   spec.ios.deployment_target = "10.0"
