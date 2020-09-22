@@ -1,0 +1,16 @@
+PODS:
+  - RPPopupMenu (0.0.1)
+
+DEPENDENCIES:
+  - RPPopupMenu (~> 0.0.1)
+
+SPEC REPOS:
+  trunk:
+    - RPPopupMenu
+
+SPEC CHECKSUMS:
+  RPPopupMenu: dbda56dc1dc4dfe965a9d0c26869d0d5309ecd87
+
+PODFILE CHECKSUM: 62d4dc5cd527515342d217eb16d22eb0648b6abc
+
+COCOAPODS: 1.8.4

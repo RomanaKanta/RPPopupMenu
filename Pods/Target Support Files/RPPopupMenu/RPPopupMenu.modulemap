@@ -1,0 +1,6 @@
+framework module RPPopupMenu {
+  umbrella header "RPPopupMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
